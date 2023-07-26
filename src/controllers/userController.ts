@@ -1,7 +1,7 @@
-import {Request,Response} from 'express';
-import {User, UserDocument} from "../models/User";
+import { Response } from 'express';
+import { User } from '../models/User';
 
-export const getAllUser = async (req:Request, res:Response) => {
-    const user = await User.find();
-    res.json(user);
-}
+export const getAllUser = async (res: Response) => {
+	const user = await User.find();
+	res.json(user);
+};

@@ -1,20 +1,18 @@
 'use strict';
 
-export{};
+export {};
 
-
-const get: any = async (req: any, res: any) => {
-  const rtnObj: any = {};
-  try{
-    req.session.destroy();
-    rtnObj.data = 'Logged out successfully.';
-  }catch( err: any ){
-    rtnObj.err = err.message;
-  }
-  return rtnObj;
+const get: any = async (req: any) => {
+	const rtnObj: any = {};
+	try {
+		req.session.destroy();
+		rtnObj.data = 'Logged out successfully.';
+	} catch (err: any) {
+		rtnObj.err = err.message;
+	}
+	return rtnObj;
 };
 
-
 module.exports = {
-  get: get
+	get: get,
 };

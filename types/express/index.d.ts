@@ -1,7 +1,7 @@
-import {Server, Socket} from "socket.io";
+import { Server } from 'socket.io';
 
 declare module 'express' {
-    interface Request {
-        io?:Server
-    }
+	interface Request {
+		io?: Server;
+	}
 }

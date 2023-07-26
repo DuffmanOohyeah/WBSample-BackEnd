@@ -24,14 +24,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/room",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"room"
-							]
+							"path": ["api", "room"]
 						}
 					},
 					"response": []
@@ -55,14 +50,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/room",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"room"
-							]
+							"path": ["api", "room"]
 						}
 					},
 					"response": []
@@ -86,15 +76,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/room/:id",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"room",
-								":id"
-							],
+							"path": ["api", "room", ":id"],
 							"query": [
 								{
 									"key": "",
@@ -128,15 +112,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/room/:id",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"room",
-								":id"
-							],
+							"path": ["api", "room", ":id"],
 							"query": [
 								{
 									"key": "",
@@ -170,15 +148,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/room/:id",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"room",
-								":id"
-							],
+							"path": ["api", "room", ":id"],
 							"query": [
 								{
 									"key": "",
@@ -217,14 +189,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/message",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"message"
-							]
+							"path": ["api", "message"]
 						}
 					},
 					"response": []
@@ -248,15 +215,9 @@
 						},
 						"url": {
 							"raw": "localhost:3000/api/message/:id",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "3000",
-							"path": [
-								"api",
-								"message",
-								":id"
-							],
+							"path": ["api", "message", ":id"],
 							"variable": [
 								{
 									"key": "id",

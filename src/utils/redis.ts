@@ -1,8 +1,5 @@
 'use script';
 
-export{};
+export {};
 
-
-module.exports = {
-
-};
+module.exports = {};

@@ -1,31 +1,34 @@
-var roomName = (window.roomName || ''),
-	baseUrl = (window.baseUrl || ''),
-	clientId = (window.clientId || ''),
-	eventId = (window.eventId || '');
+var roomName = window.roomName || '',
+	baseUrl = window.baseUrl || '',
+	clientId = window.clientId || '',
+	eventId = window.eventId || '';
 
+if (roomName) {
+	document.addEventListener(
+		'DOMContentLoaded',
+		callAnalytics('enter_' + roomName)
+	);
 
-if( roomName ){
-	document.addEventListener('DOMContentLoaded', callAnalytics('enter_' + roomName));
-			
 	var formLeave = document.getElementById('formLeave');
-			
-	formLeave.addEventListener('submit', function(evt){
+
+	formLeave.addEventListener('submit', function (evt) {
 		evt.preventDefault();
 		callAnalytics('leave_' + roomName);
-		setTimeout( function(){ window.close(); }, 1000 );			
+		setTimeout(function () {
+			window.close();
+		}, 1000);
 	});
 }
 
-
-function callAnalytics(action){
-	if( action && baseUrl ){
+function callAnalytics(action) {
+	if (action && baseUrl) {
 		var xhttp = new XMLHttpRequest(),
 			endpoint = baseUrl + 'analytics' + '/';
 		endpoint += action + '/';
-		if( clientId ){
+		if (clientId) {
 			endpoint += clientId + '/';
-			if( eventId ){
-				endpoint += eventId;	
+			if (eventId) {
+				endpoint += eventId;
 			}
 		}
 		xhttp.open('GET', endpoint, true);
